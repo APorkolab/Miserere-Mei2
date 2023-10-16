@@ -5,25 +5,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="501c9a91-11a6-40e0-9680-6c5dfe58a3a2" name="Changes" comment="Init repo.">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/LocationInventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/LocationInventoryId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/PlayerInventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/PlayerInventoryId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/util/TimeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Miserere-Mei2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/controller/AchievementController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/controller/AudioBookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/controller/NPCController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/Achievement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/UserAchievement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/repository/AchievementRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/repository/NPCRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/repository/UserAchievementRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/service/NPCService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/MiserereMei2Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/MiserereMei2Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/controller/StoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/controller/StoryLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/LocationInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/LocationInventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/LocationInventoryId.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/LocationInventoryId.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/NPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/PlayerInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/PlayerInventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/PlayerInventoryId.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/PlayerInventoryId.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/StoryLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/StoryLog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/repository/GameStateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/repository/GameStateRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/repository/StoryLogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/repository/StoryLogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/scheduler/AutoSaveScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/scheduler/AutoSaveScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/service/AchievementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/service/AchievementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/service/AudioBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/service/AudioBookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/service/ChatBotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/service/ChatBotService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/service/GameService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/service/StoryLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/service/StoryLogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/db/changelog/db.changelog-1.0.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/db/changelog/db.changelog-1.0.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/util/TimeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mrprokey/misereremei2/util/TimeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/db/changelog/db.changelog-1.0.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/db/changelog/changes/db.changelog-1.0.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,31 +100,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/adamp/IdeaProjects/miserereMei2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Web Contexts&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/adamp/IdeaProjects/Miserere-Mei2/backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "settings.codegpt",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\adamp\IdeaProjects\Miserere-Mei2\backend\src\main\resources\db\changelog\changes" />
       <recent name="C:\Users\adamp\IdeaProjects\miserereMei2\backend\src\main\java\com\mrprokey\misereremei2" />
     </key>
   </component>
@@ -100,8 +140,6 @@
   </component>
   <component name="RunManager">
     <configuration name="MiserereMei2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="17" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="miserereMei2" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mrprokey.misereremei2.MiserereMei2Application" />
       <method v="2">
@@ -118,6 +156,12 @@
       <option name="presentableId" value="Default" />
       <updated>1697085827984</updated>
       <workItem from="1697085828901" duration="6643000" />
+      <workItem from="1697093775433" duration="1896000" />
+      <workItem from="1697096436568" duration="35000" />
+      <workItem from="1697096503166" duration="117000" />
+      <workItem from="1697096645822" duration="6597000" />
+      <workItem from="1697456894359" duration="112000" />
+      <workItem from="1697457047794" duration="3334000" />
     </task>
     <task id="LOCAL-00001" summary="Init repo.">
       <option name="closed" value="true" />
@@ -163,6 +207,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init repo." />
     <option name="LAST_COMMIT_MESSAGE" value="Init repo." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.hibernate.AnnotationException" package="org.hibernate" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

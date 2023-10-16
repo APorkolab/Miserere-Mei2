@@ -1,6 +1,10 @@
+package com.mrprokey.misereremei2.util;
+
 import java.time.Duration;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.temporal.ChronoUnit;
+import java.time.ZoneId;
+import java.util.Date;
 
 public class TimeUtils {
 
@@ -28,5 +32,11 @@ public class TimeUtils {
         } else {
             return seconds + (seconds == 1 ? " second ago" : " seconds ago");
         }
+    }
+
+    public static LocalDate toLocalDate(Date date) {
+        return date.toInstant()
+                .atZone(ZoneId.systemDefault())
+                .toLocalDate();
     }
 }

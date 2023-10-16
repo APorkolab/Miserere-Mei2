@@ -1,9 +1,6 @@
 package com.mrprokey.misereremei2.model;
 
-import javax.persistence.*;
-
-@Entity
-public class PlayerInventory {
+import jakarta.persistence.*;
 
     @Entity
     @IdClass(PlayerInventoryId.class)
@@ -11,8 +8,8 @@ public class PlayerInventory {
 
         @Id
         @ManyToOne
-        @JoinColumn(name = "player_id", referencedColumnName = "id")
-        private Player player;
+        @JoinColumn(name = "user_id", referencedColumnName = "id")
+        private User user;
 
         @Id
         @ManyToOne
@@ -21,9 +18,9 @@ public class PlayerInventory {
 
         private int quantity;
 
-    public Player getPlayer() {
-        return player;
-    }
+        public User getPlayer() {
+            return user;
+        }
 
         public Item getItem() {
             return item;
@@ -41,7 +38,7 @@ public class PlayerInventory {
             this.quantity = quantity;
         }
 
-        public void setPlayer(Player player) {
-        this.player = player;
+        public void setPlayer(User user) {
+            this.user = user;
+        }
     }
-}

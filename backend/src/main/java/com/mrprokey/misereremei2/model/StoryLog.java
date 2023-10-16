@@ -1,6 +1,7 @@
 package com.mrprokey.misereremei2.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+
 import java.util.Date;
 import java.util.Set;
 
@@ -45,10 +46,82 @@ public class StoryLog {
     @Enumerated(EnumType.STRING)
     private ImportanceLevel importanceLevel;  // 1. Fontosság
 
-    // Getterek, setterek, stb.
 
     public enum EventType {
         DIALOGUE, FIGHT, DISCOVERY, OTHER
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Date getTimestamp() {
+        return (timestamp != null) ? new Date(timestamp.getTime()) : null;
+    }
+
+
+    public void setTimestamp(Date timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public EventType getEventType() {
+        return eventType;
+    }
+
+    public void setEventType(EventType eventType) {
+        this.eventType = eventType;
+    }
+
+    public Set<Location> getRelatedLocations() {
+        return relatedLocations;
+    }
+
+    public void setRelatedLocations(Set<Location> relatedLocations) {
+        this.relatedLocations = relatedLocations;
+    }
+
+    public Set<NPC> getRelatedCharacters() {
+        return relatedCharacters;
+    }
+
+    public void setRelatedCharacters(Set<NPC> relatedCharacters) {
+        this.relatedCharacters = relatedCharacters;
+    }
+
+    public Set<String> getMultimediaLinks() {
+        return multimediaLinks;
+    }
+
+    public void setMultimediaLinks(Set<String> multimediaLinks) {
+        this.multimediaLinks = multimediaLinks;
+    }
+
+    public Set<String> getPlayerNotes() {
+        return playerNotes;
+    }
+
+    public void setPlayerNotes(Set<String> playerNotes) {
+        this.playerNotes = playerNotes;
+    }
+
+    public ImportanceLevel getImportanceLevel() {
+        return importanceLevel;
+    }
+
+    public void setImportanceLevel(ImportanceLevel importanceLevel) {
+        this.importanceLevel = importanceLevel;
     }
 
     public enum ImportanceLevel {

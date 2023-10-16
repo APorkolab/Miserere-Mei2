@@ -1,26 +1,22 @@
 package com.mrprokey.misereremei2.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
+@IdClass(LocationInventoryId.class)
 public class LocationInventory {
 
+    @Id
+    @ManyToOne
+    @JoinColumn(name = "location_id", referencedColumnName = "id")
+    private Location location;
 
-    @Entity
-    @IdClass(LocationInventoryId.class)
-    public class LocationInventory {
+    @Id
+    @ManyToOne
+    @JoinColumn(name = "item_id", referencedColumnName = "id")
+    private Item item;
 
-        @Id
-        @ManyToOne
-        @JoinColumn(name = "location_id", referencedColumnName = "id")
-        private Location location;
-
-        @Id
-        @ManyToOne
-        @JoinColumn(name = "item_id", referencedColumnName = "id")
-        private Item item;
-
-        private int quantity;
+    private int quantity;
 
     public Location getLocation() {
         return location;
@@ -34,15 +30,15 @@ public class LocationInventory {
         return item;
     }
 
-        public int getQuantity() {
-            return quantity;
-        }
+    public int getQuantity() {
+        return quantity;
+    }
 
-        public void setQuantity(int quantity) {
-            this.quantity = quantity;
-        }
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 
-        public void setItem(Item item) {
+    public void setItem(Item item) {
         this.item = item;
     }
 }

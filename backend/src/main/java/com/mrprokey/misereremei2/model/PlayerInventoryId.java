@@ -4,37 +4,28 @@ import java.io.Serializable;
 import java.util.Objects;
 
 public class PlayerInventoryId implements Serializable {
+    private User user;
+    private Item item;
 
-    private Long player;
-    private Long item;
+    public PlayerInventoryId() {}
 
-    public Long getPlayer() {
-        return player;
-    }
-
-    public void setPlayer(Long player) {
-        this.player = player;
-    }
-
-    public Long getItem() {
-        return item;
-    }
-
-    public void setItem(Long item) {
+    public PlayerInventoryId(User user, Item item) {
+        this.user = user;
         this.item = item;
     }
+
+
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof PlayerInventoryId)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
         PlayerInventoryId that = (PlayerInventoryId) o;
-        return Objects.equals(player, that.player) &&
-                Objects.equals(item, that.item);
+        return Objects.equals(user, that.user) && Objects.equals(item, that.item);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(player, item);
+        return Objects.hash(user, item);
     }
 }

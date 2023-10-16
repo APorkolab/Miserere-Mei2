@@ -1,6 +1,6 @@
 package com.mrprokey.misereremei2.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 public class NPC {
@@ -12,6 +12,15 @@ public class NPC {
     private String dialogue;
     private String personality;
     private String emotionState;
+    private String defaultResponse;
+
+    public String getDefaultResponse() {
+        return defaultResponse;
+    }
+
+    public void setDefaultResponse(String defaultResponse) {
+        this.defaultResponse = defaultResponse;
+    }
 
     @ManyToOne
     @JoinColumn(name = "location_id", referencedColumnName = "id")

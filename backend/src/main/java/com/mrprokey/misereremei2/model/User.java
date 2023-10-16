@@ -1,6 +1,9 @@
 package com.mrprokey.misereremei2.model;
 
-public class User {
+import jakarta.persistence.*;
+
+import java.util.Set;
+
     @Entity
     @Table(name = "users")
     public class User {
@@ -17,18 +20,19 @@ public class User {
         @Column(nullable = false)
         private Short userLevel;
 
-        @OneToMany(mappedBy = "player")
+        @OneToMany(mappedBy = "user")
         private Set<PlayerInventory> inventory;
 
 
         public User() {
         }
 
-        public User(Long id, String username, String password, Short userLevel) {
+        public User(Long id, String username, String password, Short userLevel, Set<PlayerInventory> inventory) {
             this.id = id;
             this.username = username;
             this.password = password;
             this.userLevel = userLevel;
+            this.inventory = inventory;
         }
 
         public Long getId() {
@@ -53,6 +57,14 @@ public class User {
 
         public void setPassword(String password) {
             this.password = password;
+        }
+
+        public Set<PlayerInventory> getInventory() {
+            return inventory;
+        }
+
+        public void setInventory(Set<PlayerInventory> inventory) {
+            this.inventory = inventory;
         }
 
         public Short getUserLevel() {
