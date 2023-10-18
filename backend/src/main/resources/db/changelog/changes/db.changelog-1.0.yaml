@@ -58,8 +58,6 @@ databaseChangeLog:
                   type: varchar(1000)
                   constraints:
                     nullable: true
-  # Previous changeSets...
-
   - changeSet:
       id: 3
       author: your_name
@@ -131,5 +129,53 @@ databaseChangeLog:
                     nullable: false
                     foreignKeyName: fk_location_inventory_item
                     references: item(id)
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: yourname
+      changes:
+        - createTable:
+            tableName: game_state
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: user_id
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: current_location
+                  type: bigint
+                  constraints:
+                    nullable: true
+              - column:
+                  name: health
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: inventory
+                  type: text
+                  constraints:
+                    nullable: true
 
+        - addForeignKeyConstraint:
+            baseTableName: game_state
+            baseColumnNames: id
+            constraintName: fk_game_state_user_id
+            referencedTableName: player
+            referencedColumnNames: id
+
+        - addForeignKeyConstraint:
+            baseTableName: game_state
+            baseColumnNames: id
+            constraintName: fk_game_state_location_id
+            referencedTableName: location
+            referencedColumnNames: id
 

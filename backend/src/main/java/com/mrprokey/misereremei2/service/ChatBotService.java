@@ -4,6 +4,9 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+import org.json.JSONObject;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.ResponseEntity;
 
 @Service
 public class ChatBotService {
@@ -26,6 +29,7 @@ public class ChatBotService {
         ResponseEntity<String> response = restTemplate.postForEntity(OPENAI_URL, entity, String.class);
         JSONObject responseBody = new JSONObject(response.getBody());
 
-        return responseBody.getString("choices").getJSONObject(0).getString("text").trim();
+        return responseBody.getJSONArray("choices").getJSONObject(0).getString("text").trim();
     }
+
 }
